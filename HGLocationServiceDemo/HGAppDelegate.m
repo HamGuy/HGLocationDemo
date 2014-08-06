@@ -7,6 +7,7 @@
 //
 
 #import "HGAppDelegate.h"
+#import "HGHomeViewController.h"
 
 @implementation HGAppDelegate
 
@@ -14,6 +15,10 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    HGHomeViewController *controller = [[HGHomeViewController alloc] init];
+    self.window.rootViewController = controller;
+    
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

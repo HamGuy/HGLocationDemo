@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		457B77621980B967006F1789 /* HGAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 457B77611980B967006F1789 /* HGAnnotation.m */; };
 		459725D91980A25200125835 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459725D81980A25200125835 /* Foundation.framework */; };
 		459725DB1980A25200125835 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459725DA1980A25200125835 /* CoreGraphics.framework */; };
 		459725DD1980A25200125835 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459725DC1980A25200125835 /* UIKit.framework */; };
@@ -19,6 +20,9 @@
 		459725F41980A25200125835 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459725DC1980A25200125835 /* UIKit.framework */; };
 		459725FC1980A25200125835 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 459725FA1980A25200125835 /* InfoPlist.strings */; };
 		459725FE1980A25200125835 /* HGLocationServiceDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 459725FD1980A25200125835 /* HGLocationServiceDemoTests.m */; };
+		459726081980A25E00125835 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459726071980A25E00125835 /* MapKit.framework */; };
+		4597260E1980A42B00125835 /* HGHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4597260C1980A42B00125835 /* HGHomeViewController.m */; };
+		4597260F1980A42B00125835 /* HGHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4597260D1980A42B00125835 /* HGHomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		457B77601980B967006F1789 /* HGAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HGAnnotation.h; path = src/HGAnnotation.h; sourceTree = "<group>"; };
+		457B77611980B967006F1789 /* HGAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HGAnnotation.m; path = src/HGAnnotation.m; sourceTree = "<group>"; };
 		459725D51980A25200125835 /* HGLocationServiceDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HGLocationServiceDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		459725D81980A25200125835 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		459725DA1980A25200125835 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +54,10 @@
 		459725F91980A25200125835 /* HGLocationServiceDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HGLocationServiceDemoTests-Info.plist"; sourceTree = "<group>"; };
 		459725FB1980A25200125835 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		459725FD1980A25200125835 /* HGLocationServiceDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGLocationServiceDemoTests.m; sourceTree = "<group>"; };
+		459726071980A25E00125835 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4597260B1980A42B00125835 /* HGHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HGHomeViewController.h; path = src/HGHomeViewController.h; sourceTree = "<group>"; };
+		4597260C1980A42B00125835 /* HGHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HGHomeViewController.m; path = src/HGHomeViewController.m; sourceTree = "<group>"; };
+		4597260D1980A42B00125835 /* HGHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HGHomeViewController.xib; path = src/HGHomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +67,7 @@
 			files = (
 				459725DB1980A25200125835 /* CoreGraphics.framework in Frameworks */,
 				459725DD1980A25200125835 /* UIKit.framework in Frameworks */,
+				459726081980A25E00125835 /* MapKit.framework in Frameworks */,
 				459725D91980A25200125835 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,6 +88,7 @@
 		459725CC1980A25200125835 = {
 			isa = PBXGroup;
 			children = (
+				459726091980A40300125835 /* src */,
 				459725DE1980A25200125835 /* HGLocationServiceDemo */,
 				459725F71980A25200125835 /* HGLocationServiceDemoTests */,
 				459725D71980A25200125835 /* Frameworks */,
@@ -96,6 +108,7 @@
 		459725D71980A25200125835 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				459726071980A25E00125835 /* MapKit.framework */,
 				459725D81980A25200125835 /* Foundation.framework */,
 				459725DA1980A25200125835 /* CoreGraphics.framework */,
 				459725DC1980A25200125835 /* UIKit.framework */,
@@ -142,6 +155,26 @@
 				459725FA1980A25200125835 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		459726091980A40300125835 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				4597260A1980A40D00125835 /* Controller */,
+				457B77601980B967006F1789 /* HGAnnotation.h */,
+				457B77611980B967006F1789 /* HGAnnotation.m */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		4597260A1980A40D00125835 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4597260B1980A42B00125835 /* HGHomeViewController.h */,
+				4597260C1980A42B00125835 /* HGHomeViewController.m */,
+				4597260D1980A42B00125835 /* HGHomeViewController.xib */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +225,13 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "___DXY___";
 				TargetAttributes = {
+					459725D41980A25200125835 = {
+						SystemCapabilities = {
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					459725EF1980A25200125835 = {
 						TestTargetID = 459725D41980A25200125835;
 					};
@@ -221,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				459725E31980A25200125835 /* InfoPlist.strings in Resources */,
+				4597260F1980A42B00125835 /* HGHomeViewController.xib in Resources */,
 				459725EB1980A25200125835 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,6 +283,8 @@
 			files = (
 				459725E51980A25200125835 /* main.m in Sources */,
 				459725E91980A25200125835 /* HGAppDelegate.m in Sources */,
+				457B77621980B967006F1789 /* HGAnnotation.m in Sources */,
+				4597260E1980A42B00125835 /* HGHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,7 +358,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -348,7 +391,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -440,6 +483,7 @@
 				459726031980A25200125835 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		459726041980A25200125835 /* Build configuration list for PBXNativeTarget "HGLocationServiceDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +492,7 @@
 				459726061980A25200125835 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
